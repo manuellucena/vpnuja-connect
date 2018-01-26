@@ -17,8 +17,9 @@ cuando ya parecía que me iba a poder conectar, me salió un mensaje en el
 navegador (Firefox 58) que indicaba abiertamente que ese tipo de plugins no
 estaba soportado. Con Google Chrome y Qupzilla tampoco hubo mucha más suerte.
 
-Después de descargar el fichero para instalar manualmente el _plugin_, y ejecutarlo
-como _root_, comprobé que éste incorpora un cliente de línea de comandos (CLI)...
+Después de descargar el fichero para instalar manualmente el _plugin_, y
+ejecutar el instalador como _root_, comprobé que éste incorpora un cliente de
+línea de comandos (CLI)...
 
 
 ## Instalación
