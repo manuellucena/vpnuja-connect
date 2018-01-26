@@ -41,12 +41,24 @@ Ejecutamos como _root_ la orden de instalación:
 Respondemos afirmativamente a las preguntas, con lo que se instalará la versión
 de línea de comandos (CLI) del cliente.
 
+En cuanto al _script_ propiamente dicho, basta con hacerlo ejecutable:
+
+    chmod +x vpnujaconn.sh
+
+editarlo para poner nuestro nombre de usuario TIC, y finalmente invocarlo con:
+
+    ./vpnujaconn.sh
+
 ## El Script
 
 El _script_, escrito en _bash_, es extremadamente simple. Primero llama a
 `ssh-askpass` para obtener la contraseña, luego invoca al ejecutable `f5fpc`
 para iniciar la conexión, espera que se pulse una tecla, y la cierra.
 
+La llamada para la conexión se hace con la opción `-x`, que deshabilita la
+comprobación del certificado del servidor. He intentado que se verifique el
+certificado de la Universidad, pero no lo he logrado aún. Se aceptan
+sugerencias.
 
 ## Uso
 
