@@ -63,8 +63,7 @@ sugerencias.
 
 ## Uso
 
-Basta con ejecutar el _script_ como _root_ (parece que como usuario normal también
-funciona, pero no estoy del todo seguro) y dejar la consola abierta.
+Basta con ejecutar el _script_  y dejar la consola abierta.
 
 Para salir y cerrar la conexión, pulsamos cualquier tecla.
 
