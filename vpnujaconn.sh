@@ -12,13 +12,19 @@ user=usuarioTIC
 
 # Obtener la contraseña
 pass=''
-while [ -z ${pass} ]; do
+while [ -z "${pass}" ]; do
     pass=`ssh-askpass "Introduzca la contraseña de su cuenta TIC"`
 done
 
 # Iniciar la conexión
-f5fpc -s -t https://vpnssl.ujaen.es -x -u ${user} -p ${pass}
+f5fpc -s -t https://vpnssl.ujaen.es -x -u ${user} -p "${pass}"
 
+echo Conectando...
+echo 
+
+# Esperamos a que se establezca la conexión para mostrar sus detalles
+sleep 8s
+f5fpc --info
 
 # Para usar la intefaz solo texto, descomentar las siguientes dos líneas:
 
